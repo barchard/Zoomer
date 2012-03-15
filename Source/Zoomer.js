@@ -67,6 +67,7 @@ var Zoomer = new Class({
 			var style = this.small.getStyle(p);
 			var dflt = 'auto';
 			if(['float', 'clear', 'border'].contains(p)) dflt = 'none';
+			if(p == 'margin') style = '0 auto';
 			if(p == 'padding') dflt = '0';
 			try {
 				this.small.setStyle(p, dflt);
